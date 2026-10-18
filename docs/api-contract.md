@@ -123,9 +123,10 @@ Every error response uses the same JSON shape:
 }
 ```
 
-| Status | Code                   | Returned when                                             |
-| ------ | ---------------------- | --------------------------------------------------------- |
-| 400    | VALIDATION_ERROR       | The data sent is missing, malformed or breaks a rule.     |
-| 404    | ISSUE_NOT_FOUND        | The id in the URL does not exist.                         |
-| 415    | UNSUPPORTED_MEDIA_TYPE | The body is not JSON although the endpoint requires JSON. |
-| 500    | INTERNAL_ERROR         | Something unexpected failed on the server.                |
+| Status | Code                   | Returned when                                                     |
+| ------ | ---------------------- | ----------------------------------------------------------------- |
+| 400    | VALIDATION_ERROR       | The data sent is missing, malformed, or breaks a validation rule. |
+| 404    | ISSUE_NOT_FOUND        | The ID in the URL does not exist.                                 |
+| 404    | ROUTE_NOT_FOUND        | The HTTP method and path do not match any defined endpoint.       |
+| 415    | UNSUPPORTED_MEDIA_TYPE | The request body is not JSON although the endpoint requires JSON. |
+| 500    | INTERNAL_ERROR         | An unexpected server error occurs.                                |

@@ -6,5 +6,21 @@
     "priority": "High",
     "status": "Open",
     "createdAt": "2026-09-01T09:00:00.000Z"
+  },
+  {
+    "id": "bc3fbd08-82a9-40d4-aeb2-8a48420f2ced",
+    "title": "Printer not working",
+    "description": "The lab printer does not respond.",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2026-10-18T06:57:09.183Z"
+  },
+  {
+    "id": "463ae08f-58b8-43b6-baf5-525bfabb2ef1",
+    "title": "Server-owned fields test",
+    "description": "Checking server-controlled fields.",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-10-18T07:06:09.246Z"
   }
 ]
